@@ -23,7 +23,13 @@ Qui il corpo parla, e noi impariamo ad ascoltarlo insieme. 💫
 💬 https://wa.me/3336894138
 📞 3336894138
 
-## Google
+## Link
+
+- Google: https://share.google/YEVvQxojPVBSLv6Gb
+- Maps: https://maps.app.goo.gl/X4QU3Te3BnuKqXJY6
+- Instagram: https://www.instagram.com/p/DQZgT5CDONj/
+
+## Description
 
 Da Corpus Fisioterapia·Osteopatia·Movimento Roma
 "Corpus è uno studio di fisioterapia, osteopatia, nutrizione e trattamenti shiatsu situato nel cuore dell’Ardeatino, a Roma. Offriamo un approccio integrato e personalizzato per il benessere del corpo e della mente, unendo competenza scientifica e attenzione alla persona. Da noi puoi trovare percorsi mirati per dolori muscolari e articolari, disturbi posturali, riabilitazione, gestione dello stress e miglioramento dello stile di vita. Prenota il tuo check-up gratuito e scopri come ritrovare equilibrio, energia e salute in un ambiente accogliente e professionale."
