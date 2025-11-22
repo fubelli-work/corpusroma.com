@@ -84,6 +84,37 @@
       color: white;
     }
 
+    .service-card {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      height: 250px;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(0, 40, 79, 0.85), rgba(0, 0, 0, 0.75));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .service-card-content {
+      padding: 2rem;
+      text-align: center;
+    }
+
     @media only screen and (max-width: 768px) {
       .navbar {
         background-color: white;
@@ -91,6 +122,14 @@
 
       .navbar.navbar-light:not(.top-nav-collapse) .navbar-nav .nav-item .nav-link {
         color: black;
+      }
+
+      .service-card {
+        height: 200px;
+      }
+
+      .service-card-content {
+        padding: 1.5rem;
       }
 
       #first-section-box-sx {
@@ -249,71 +288,71 @@
 
               <!--Grid column-->
               <div class="col-lg-4 col-md-6 mb-4">
-                <div class="row">
-                  <div class="col-2">
-                    <h2>💪</h2>
-                  </div>
-                  <div class="col-10 mb-2 pl-3">
-                    <h5 class="feature-title font-bold mb-1">Fisioterapia e riabilitazione</h5>
-                    <p class="grey-text mt-2">
-                      Per tornare in movimento con fiducia e sicurezza
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="row">
-                  <div class="col-2">
-                    <h2>🌀</h2>
-                  </div>
-                  <div class="col-10 mb-2 pl-3">
-                    <h5 class="feature-title font-bold mb-1">Osteopatia</h5>
-                    <p class="grey-text mt-2">
-                      Per ritrovare armonia e liberare il corpo dalle tensioni
-                    </p>
+                <div class="service-card" style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80');">
+                  <div class="service-card-overlay">
+                    <div class="service-card-content">
+                      <h2 class="mb-3">💪</h2>
+                      <h5 class="feature-title font-bold mb-2 text-white">Fisioterapia e riabilitazione</h5>
+                      <p class="text-white-50">
+                        Per tornare in movimento con fiducia e sicurezza
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <div class="col-lg-4 col-md-6 mb-4">
-                <div class="row">
-                  <div class="col-2">
-                    <h2>🥗</h2>
-                  </div>
-                  <div class="col-10 mb-2 pl-3">
-                    <h5 class="feature-title font-bold mb-1">Nutrizione</h5>
-                    <p class="grey-text mt-2">
-                      Per sostenere il tuo equilibrio anche dall'interno
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="row">
-                  <div class="col-2">
-                    <h2>🌿</h2>
-                  </div>
-                  <div class="col-10 mb-2 pl-3">
-                    <h5 class="feature-title font-bold mb-1">Shiatsu</h5>
-                    <p class="grey-text mt-2">
-                      Per rilassare, riequilibrare e rigenerare
-                    </p>
+                <div class="service-card" style="background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80');">
+                  <div class="service-card-overlay">
+                    <div class="service-card-content">
+                      <h2 class="mb-3">🌀</h2>
+                      <h5 class="feature-title font-bold mb-2 text-white">Osteopatia</h5>
+                      <p class="text-white-50">
+                        Per ritrovare armonia e liberare il corpo dalle tensioni
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <div class="col-lg-4 col-md-6 mb-4">
-                <div class="row">
-                  <div class="col-2">
-                    <h2>🏋️</h2>
+                <div class="service-card" style="background-image: url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80');">
+                  <div class="service-card-overlay">
+                    <div class="service-card-content">
+                      <h2 class="mb-3">🥗</h2>
+                      <h5 class="feature-title font-bold mb-2 text-white">Nutrizione</h5>
+                      <p class="text-white-50">
+                        Per sostenere il tuo equilibrio anche dall'interno
+                      </p>
+                    </div>
                   </div>
-                  <div class="col-10 mb-2 pl-3">
-                    <h5 class="feature-title font-bold mb-1">Personal Training</h5>
-                    <p class="grey-text mt-2">
-                      Per ritrovare forza, postura e vitalità ogni giorno
-                    </p>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="service-card" style="background-image: url('https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=800&q=80');">
+                  <div class="service-card-overlay">
+                    <div class="service-card-content">
+                      <h2 class="mb-3">🌿</h2>
+                      <h5 class="feature-title font-bold mb-2 text-white">Shiatsu</h5>
+                      <p class="text-white-50">
+                        Per rilassare, riequilibrare e rigenerare
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="service-card" style="background-image: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80');">
+                  <div class="service-card-overlay">
+                    <div class="service-card-content">
+                      <h2 class="mb-3">🏋️</h2>
+                      <h5 class="feature-title font-bold mb-2 text-white">Personal Training</h5>
+                      <p class="text-white-50">
+                        Per ritrovare forza, postura e vitalità ogni giorno
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
