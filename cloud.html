@@ -104,7 +104,8 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: linear-gradient(135deg, rgb(21 55 90 / 85%), rgb(0 0 0 / 75%));
+      /*background: linear-gradient(135deg, rgb(21 55 90 / 85%), rgb(0 0 0 / 75%));*/
+      background: linear-gradient(135deg, rgba(0, 40, 79, 0.85), rgb(3 16 32 / 87%), rgba(0, 0, 0, 0.75));
       display: flex;
       align-items: center;
       justify-content: center;
@@ -113,6 +114,12 @@
     .service-card-content {
       padding: 2rem;
       text-align: center;
+    }
+
+    .service-card-content h5,
+    .service-card-content p {
+      text-shadow: 0 0 10px rgb(0 0 0), 0 0 40px rgb(0 0 0),
+        0 0 10px rgb(0 0 0)
     }
 
     @media only screen and (max-width: 768px) {
@@ -381,83 +388,81 @@
 
     <hr class="my-5">
 
-    <div id="section-3" style="padding-top: 2rem;">
 
-      <!--Section: Main info-->
-      <section class="mt-5 wow fadeIn d-flex" style="flex-direction: column;">
+    <!--Section: Main info-->
+    <section id="section-3" class="mt-5 wow fadeIn d-flex" style="flex-direction: column;">
 
-        <h2 class="h2 text-center mb-5 w-100 mx-auto">Cosa offriamo</h2>
+      <h2 class="h2 text-center mb-5 w-100 mx-auto">Cosa offriamo</h2>
 
-        <!--Grid row-->
-        <div class="justify-content-md-center col-md-12 col-lg-10 mx-auto">
+      <!--Grid row-->
+      <div class="justify-content-md-center col-md-12 col-lg-10 mx-auto row">
 
-          <!--Grid column-->
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">
-                  <i class="fas fa-walking indigo-text mr-2"></i>
-                  Percorsi personalizzati
-                </h4>
-                <p class="card-text grey-text">
-                  Dolori muscolari e articolari, disturbi posturali, riabilitazione:
-                  ogni percorso è studiato sulle tue esigenze specifiche.
-                </p>
-              </div>
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">
+                <i class="fas fa-walking indigo-text mr-2"></i>
+                Percorsi personalizzati
+              </h4>
+              <p class="card-text grey-text">
+                Dolori muscolari e articolari, disturbi posturali, riabilitazione:
+                ogni percorso è studiato sulle tue esigenze specifiche.
+              </p>
             </div>
           </div>
-
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">
-                  <i class="fas fa-heartbeat blue-text mr-2"></i>
-                  Gestione dello stress
-                </h4>
-                <p class="card-text grey-text">
-                  Tecniche integrate per il benessere psico-fisico,
-                  combinando approcci occidentali e orientali.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">
-                  <i class="fas fa-utensils indigo-text mr-2"></i>
-                  Miglioramento dello stile di vita
-                </h4>
-                <p class="card-text grey-text">
-                  Supporto nutrizionale e programmi di allenamento personalizzati
-                  per un benessere a 360 gradi.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">
-                  <i class="fas fa-clipboard-check blue-text mr-2"></i>
-                  Check-up gratuito
-                </h4>
-                <p class="card-text grey-text">
-                  Prenota il tuo check-up gratuito e scopri come ritrovare
-                  equilibrio, energia e salute.
-                </p>
-              </div>
-            </div>
-          </div>
-
         </div>
-        <!--Grid row-->
 
-      </section>
-      <!--Section: Main info-->
-    </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">
+                <i class="fas fa-heartbeat blue-text mr-2"></i>
+                Gestione dello stress
+              </h4>
+              <p class="card-text grey-text">
+                Tecniche integrate per il benessere psico-fisico,
+                combinando approcci occidentali e orientali.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">
+                <i class="fas fa-utensils indigo-text mr-2"></i>
+                Miglioramento dello stile di vita
+              </h4>
+              <p class="card-text grey-text">
+                Supporto nutrizionale e programmi di allenamento personalizzati
+                per un benessere a 360 gradi.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">
+                <i class="fas fa-clipboard-check blue-text mr-2"></i>
+                Check-up gratuito
+              </h4>
+              <p class="card-text grey-text">
+                Prenota il tuo check-up gratuito e scopri come ritrovare
+                equilibrio, energia e salute.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--Grid row-->
+
+    </section>
+    <!--Section: Main info-->
 
     <hr class="my-5">
 
