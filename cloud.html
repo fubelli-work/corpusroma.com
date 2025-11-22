@@ -122,6 +122,36 @@
         0 0 10px rgb(0 0 0)
     }
 
+    #first-section {
+      position: relative;
+      height: inherit;
+      padding-top: 4.5rem;
+      padding-bottom: 2rem;
+      flex-direction: column;
+      /*background-color: #00172df2;*/
+      background: linear-gradient(to bottom, #00172df2, #000000d9);
+    }
+
+    #info-bar {
+      padding-top: .5rem;
+      background-color: #00000061;
+      min-height: 4rem;
+      margin-top: 2rem;
+    }
+
+    #info-bar .fas,
+    #info-bar .far,
+    #info-bar .fab {
+      font-size: 1.5rem;
+    }
+
+    #section-2 {
+      background: linear-gradient(to bottom, #0a1f26, #103944, #0a1f26);
+      color: white;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
     @media only screen and (max-width: 768px) {
       .navbar {
         background-color: white;
@@ -146,22 +176,18 @@
       #first-section-box-sx h1 {
         padding-top: 1rem;
       }
-    }
 
-    #first-section {
-      position: relative;
-      height: inherit;
-      padding-top: 10rem;
-      padding-bottom: 6rem;
-      /*background-color: #00172df2;*/
-      background: linear-gradient(to bottom, #00172df2, #000000d9);
-    }
+      #info-bar {
+        margin-top: 0 !important;
+        padding-top: 1.3rem !important;
+        padding-bottom: .5rem !important;
+      }
 
-    #section-2 {
-      background: linear-gradient(to bottom, #0a1f26, #0f2e36, #0a1f26);
-      color: white;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
+      #info-bar .fas,
+      #info-bar .far,
+      #info-bar .fab {
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
@@ -223,14 +249,43 @@
     <!-- Mask & flexbox options-->
     <div id="first-section" class="mask rgba-black d-flex justify-content-center align-items-center">
 
+      <!-- Info Bar -->
+      <div class="container d-flex mb-2 py-2" id="info-bar">
+        <div class="row text-white text-center small m-auto w-100" style="row-gap: .5rem;">
+          <div class="col-lg-3 col-md-6 mb-2 d-flex align-items-center justify-content-center">
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            <a href="https://maps.app.goo.gl/X4QU3Te3BnuKqXJY6" target="_blank" class="text-white"
+              style="text-decoration: none;">
+              Via Eusebio Chini, 15, 00147 Roma RM
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-2 d-flex align-items-center justify-content-center">
+            <i class="far fa-clock mr-2"></i>
+            Lun - Ven 08:00-20:00
+          </div>
+          <div class="col-lg-3 col-md-6 mb-2 d-flex align-items-center justify-content-center">
+            <i class="fas fa-phone mr-2"></i>
+            <a href="tel:+393336894138" class="text-white" style="text-decoration: none;">
+              (+39) 333 6894 138
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-2 d-flex align-items-center justify-content-center">
+            <i class="fab fa-whatsapp mr-2"></i>
+            <a href="https://wa.me/3336894138" target="_blank" class="text-white" style="text-decoration: none;">
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
       <!-- Content -->
-      <div class="container m-auto">
+      <div class="container mx-auto mb-auto mt-2">
 
         <!--Grid row-->
         <div class="row wow fadeIn card-intro" style="background: rgba(0,23,79,0.31);">
 
           <!--Grid column-->
-          <div id="first-section-box-sx" class="col-md-6 mb-4 white-text text-center text-md-left">
+          <div id="first-section-box-sx" class="col-md-6 white-text text-center text-md-left">
 
             <h1 class="display-4 font-weight-bold">CORPUS</h1>
 
@@ -248,7 +303,7 @@
               <li><strong>Check-up gratuito</strong></li>
             </ul>
 
-            <a href="#main" class="btn btn-info btn-lg mt-5">
+            <a href="#main" class="btn btn-info btn-lg mt-5" style="border-radius: 2rem">
               Scopri di più
             </a>
 
@@ -256,7 +311,7 @@
           <!--Grid column-->
 
           <!--Grid column-->
-          <div class="col-md-6 col-xl-5 mb-4 d-flex">
+          <div class="col-md-6 col-xl-5 d-flex">
 
             <!--
           <div class="text-white text-center">
@@ -302,8 +357,7 @@
 
             <!--Grid column-->
             <div class="col-lg-4 col-md-6 mb-4">
-              <div class="service-card"
-                style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80');">
+              <div class="service-card" style="background-image: url('img/services/fisioterapia-1.png');">
                 <div class="service-card-overlay">
                   <div class="service-card-content">
                     <h2 class="mb-3">💪</h2>
@@ -317,8 +371,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6 mb-4">
-              <div class="service-card"
-                style="background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80');">
+              <div class="service-card" style="background-image: url('img/services/osteopatia.png');">
                 <div class="service-card-overlay">
                   <div class="service-card-content">
                     <h2 class="mb-3">🌀</h2>
@@ -332,8 +385,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6 mb-4">
-              <div class="service-card"
-                style="background-image: url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80');">
+              <div class="service-card" style="background-image: url('img/services/nutrizione.png');">
                 <div class="service-card-overlay">
                   <div class="service-card-content">
                     <h2 class="mb-3">🥗</h2>
@@ -347,8 +399,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6 mb-4">
-              <div class="service-card"
-                style="background-image: url('https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=800&q=80');">
+              <div class="service-card" style="background-image: url('img/services/shiatsu.png');">
                 <div class="service-card-overlay">
                   <div class="service-card-content">
                     <h2 class="mb-3">🌿</h2>
@@ -362,8 +413,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6 mb-4">
-              <div class="service-card"
-                style="background-image: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80');">
+              <div class="service-card" style="background-image: url('img/services/personal-training.png');">
                 <div class="service-card-overlay">
                   <div class="service-card-content">
                     <h2 class="mb-3">🏋️</h2>

@@ -23,6 +23,13 @@ Qui il corpo parla, e noi impariamo ad ascoltarlo insieme. 💫
 💬 https://wa.me/3336894138
 📞 3336894138
 
+## Main Information
+
+- Indirizzo: Via Eusebio Chini, 15, 00147 Roma RM
+- Orari di Apertura: Lun - Ven 08:00-20:00
+- Telefono: (+39) 333 6894 138
+- WhatsApp: https://wa.me/3336894138
+
 ## Link
 
 - Google: https://share.google/YEVvQxojPVBSLv6Gb
