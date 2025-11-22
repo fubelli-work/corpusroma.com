@@ -135,6 +135,7 @@
       #first-section-box-sx {
         margin-bottom: 5rem !important;
       }
+
       #first-section-box-sx h1 {
         padding-top: 1rem;
       }
@@ -143,10 +144,17 @@
     #first-section {
       position: relative;
       height: inherit;
-      padding-top: 8rem;
-      padding-bottom: 8rem;
+      padding-top: 10rem;
+      padding-bottom: 6rem;
       /*background-color: #00172df2;*/
       background: linear-gradient(to bottom, #00172df2, #000000d9);
+    }
+
+    #section-2 {
+      background-color: #0f2e36;
+      color: white;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
     }
   </style>
 </head>
@@ -271,103 +279,109 @@
   <!-- Full Page Intro -->
 
   <!--Main layout-->
-  <main id="main" style="padding-top: 0.01px !important">
-    <div class="container" style="max-width: 95vw; margin-top: 4rem;">
+  <main id="main" class="w-100">
 
-      <!--Section: Services-->
-      <section>
+    <!--Section: Services-->
+    <section id="section-2">
 
-        <h2 class="my-4 h2 text-center">I Nostri Servizi</h2>
+      <h2 class="my-4 h2 text-center">I Nostri Servizi</h2>
 
-        <div class="d-flex">
+      <div class="d-flex">
 
-          <div class="m-auto col-lg-10 col-md-12">
+        <div class="m-auto col-lg-10 col-md-12">
 
-            <!--First row-->
-            <div class="row features-small mt-4 wow fadeIn d-flex">
+          <!--First row-->
+          <div class="row features-small mt-4 wow fadeIn d-flex">
 
-              <!--Grid column-->
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="service-card" style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80');">
-                  <div class="service-card-overlay">
-                    <div class="service-card-content">
-                      <h2 class="mb-3">💪</h2>
-                      <h5 class="feature-title font-bold mb-2 text-white">Fisioterapia e riabilitazione</h5>
-                      <p class="text-white-50">
-                        Per tornare in movimento con fiducia e sicurezza
-                      </p>
-                    </div>
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="service-card"
+                style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80');">
+                <div class="service-card-overlay">
+                  <div class="service-card-content">
+                    <h2 class="mb-3">💪</h2>
+                    <h5 class="feature-title font-bold mb-2 text-white">Fisioterapia e riabilitazione</h5>
+                    <p class="text-white-50">
+                      Per tornare in movimento con fiducia e sicurezza
+                    </p>
                   </div>
                 </div>
               </div>
-
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="service-card" style="background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80');">
-                  <div class="service-card-overlay">
-                    <div class="service-card-content">
-                      <h2 class="mb-3">🌀</h2>
-                      <h5 class="feature-title font-bold mb-2 text-white">Osteopatia</h5>
-                      <p class="text-white-50">
-                        Per ritrovare armonia e liberare il corpo dalle tensioni
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="service-card" style="background-image: url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80');">
-                  <div class="service-card-overlay">
-                    <div class="service-card-content">
-                      <h2 class="mb-3">🥗</h2>
-                      <h5 class="feature-title font-bold mb-2 text-white">Nutrizione</h5>
-                      <p class="text-white-50">
-                        Per sostenere il tuo equilibrio anche dall'interno
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="service-card" style="background-image: url('https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=800&q=80');">
-                  <div class="service-card-overlay">
-                    <div class="service-card-content">
-                      <h2 class="mb-3">🌿</h2>
-                      <h5 class="feature-title font-bold mb-2 text-white">Shiatsu</h5>
-                      <p class="text-white-50">
-                        Per rilassare, riequilibrare e rigenerare
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="service-card" style="background-image: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80');">
-                  <div class="service-card-overlay">
-                    <div class="service-card-content">
-                      <h2 class="mb-3">🏋️</h2>
-                      <h5 class="feature-title font-bold mb-2 text-white">Personal Training</h5>
-                      <p class="text-white-50">
-                        Per ritrovare forza, postura e vitalità ogni giorno
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--/Grid column-->
             </div>
-            <!--/First row-->
 
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="service-card"
+                style="background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80');">
+                <div class="service-card-overlay">
+                  <div class="service-card-content">
+                    <h2 class="mb-3">🌀</h2>
+                    <h5 class="feature-title font-bold mb-2 text-white">Osteopatia</h5>
+                    <p class="text-white-50">
+                      Per ritrovare armonia e liberare il corpo dalle tensioni
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="service-card"
+                style="background-image: url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80');">
+                <div class="service-card-overlay">
+                  <div class="service-card-content">
+                    <h2 class="mb-3">🥗</h2>
+                    <h5 class="feature-title font-bold mb-2 text-white">Nutrizione</h5>
+                    <p class="text-white-50">
+                      Per sostenere il tuo equilibrio anche dall'interno
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="service-card"
+                style="background-image: url('https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=800&q=80');">
+                <div class="service-card-overlay">
+                  <div class="service-card-content">
+                    <h2 class="mb-3">🌿</h2>
+                    <h5 class="feature-title font-bold mb-2 text-white">Shiatsu</h5>
+                    <p class="text-white-50">
+                      Per rilassare, riequilibrare e rigenerare
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="service-card"
+                style="background-image: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80');">
+                <div class="service-card-overlay">
+                  <div class="service-card-content">
+                    <h2 class="mb-3">🏋️</h2>
+                    <h5 class="feature-title font-bold mb-2 text-white">Personal Training</h5>
+                    <p class="text-white-50">
+                      Per ritrovare forza, postura e vitalità ogni giorno
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/Grid column-->
           </div>
+          <!--/First row-->
 
         </div>
 
-      </section>
-      <!--Section: Services-->
+      </div>
 
-      <hr class="my-5">
+    </section>
+    <!--Section: Services-->
+
+    <hr class="my-5">
+
+    <div id="section-3" style="padding-top: 2rem;">
 
       <!--Section: Main info-->
       <section class="mt-5 wow fadeIn d-flex" style="flex-direction: column;">
@@ -375,7 +389,7 @@
         <h2 class="h2 text-center mb-5 w-100 mx-auto">Cosa offriamo</h2>
 
         <!--Grid row-->
-        <div class="row justify-content-md-center col-md-12 col-lg-10 mx-auto">
+        <div class="justify-content-md-center col-md-12 col-lg-10 mx-auto">
 
           <!--Grid column-->
           <div class="col-md-6 mb-4">
@@ -443,90 +457,91 @@
 
       </section>
       <!--Section: Main info-->
+    </div>
 
-      <hr class="my-5">
+    <hr class="my-5">
 
-      <!--Section: Main features & Quick Start-->
-      <section>
+    <!--Section: Main features & Quick Start-->
+    <section>
 
-        <h3 class="h3 text-center mb-5">Perché scegliere Corpus</h3>
+      <h3 class="h3 text-center mb-5">Perché scegliere Corpus</h3>
 
-        <!--Grid row-->
-        <div class="row wow fadeIn d-flex">
+      <!--Grid row-->
+      <div class="wow fadeIn d-flex">
 
-          <!--Grid column-->
-          <div class="col-lg-8 col-md-12 px-4 m-auto">
+        <!--Grid column-->
+        <div class="col-lg-8 col-md-12 px-4 m-auto">
 
-            <!--First row-->
-            <div class="row mb-4">
-              <div class="col-1 mr-3">
-                <i class="fas fa-check-circle fa-2x text-success"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Competenza scientifica unita ad attenzione alla persona</h5>
-              </div>
+          <!--First row-->
+          <div class="row mb-4">
+            <div class="col-1 mr-3">
+              <i class="fas fa-check-circle fa-2x text-success"></i>
             </div>
-
-            <div class="row mb-4">
-              <div class="col-1 mr-3">
-                <i class="fas fa-check-circle fa-2x text-success"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Approccio integrato: fisioterapia, osteopatia, nutrizione, shiatsu e personal
-                  training</h5>
-              </div>
+            <div class="col-10">
+              <h5 class="feature-title">Competenza scientifica unita ad attenzione alla persona</h5>
             </div>
-
-            <div class="row mb-4">
-              <div class="col-1 mr-3">
-                <i class="fas fa-check-circle fa-2x text-success"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Professionisti qualificati che collaborano per il tuo benessere</h5>
-              </div>
-            </div>
-
-            <div class="row mb-4">
-              <div class="col-1 mr-3">
-                <i class="fas fa-check-circle fa-2x text-success"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Ambiente accogliente nel cuore dell'Ardeatino</h5>
-              </div>
-            </div>
-
-            <div class="row mb-4">
-              <div class="col-1 mr-3">
-                <i class="fas fa-check-circle fa-2x text-success"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Percorsi personalizzati studiati sulle tue esigenze</h5>
-              </div>
-            </div>
-
-            <div class="text-center mt-5">
-              <h4 class="mb-4">📍 Vieni a trovarci</h4>
-              <p class="h5"><i class="fas fa-map-marker-alt mr-2"></i>Via Eusebio Chini 15, 00147 Roma</p>
-              <p class="grey-text">Nel cuore dell'Ardeatino</p>
-
-              <div class="mt-5">
-                <a href="https://wa.me/3336894138" target="_blank" class="btn btn-success btn-lg mx-2">
-                  <i class="fab fa-whatsapp"></i> WhatsApp
-                </a>
-                <a href="tel:3336894138" class="btn btn-info btn-lg mx-2">
-                  <i class="fas fa-phone"></i> Chiama ora
-                </a>
-              </div>
-            </div>
-
           </div>
-          <!--/Grid column-->
+
+          <div class="row mb-4">
+            <div class="col-1 mr-3">
+              <i class="fas fa-check-circle fa-2x text-success"></i>
+            </div>
+            <div class="col-10">
+              <h5 class="feature-title">Approccio integrato: fisioterapia, osteopatia, nutrizione, shiatsu e personal
+                training</h5>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-1 mr-3">
+              <i class="fas fa-check-circle fa-2x text-success"></i>
+            </div>
+            <div class="col-10">
+              <h5 class="feature-title">Professionisti qualificati che collaborano per il tuo benessere</h5>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-1 mr-3">
+              <i class="fas fa-check-circle fa-2x text-success"></i>
+            </div>
+            <div class="col-10">
+              <h5 class="feature-title">Ambiente accogliente nel cuore dell'Ardeatino</h5>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-1 mr-3">
+              <i class="fas fa-check-circle fa-2x text-success"></i>
+            </div>
+            <div class="col-10">
+              <h5 class="feature-title">Percorsi personalizzati studiati sulle tue esigenze</h5>
+            </div>
+          </div>
+
+          <div class="text-center mt-5">
+            <h4 class="mb-4">📍 Vieni a trovarci</h4>
+            <p class="h5"><i class="fas fa-map-marker-alt mr-2"></i>Via Eusebio Chini 15, 00147 Roma</p>
+            <p class="grey-text">Nel cuore dell'Ardeatino</p>
+
+            <div class="mt-5">
+              <a href="https://wa.me/3336894138" target="_blank" class="btn btn-success btn-lg mx-2">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+              </a>
+              <a href="tel:3336894138" class="btn btn-info btn-lg mx-2">
+                <i class="fas fa-phone"></i> Chiama ora
+              </a>
+            </div>
+          </div>
 
         </div>
-        <!--/Grid row-->
+        <!--/Grid column-->
 
-      </section>
-      <!--Section: Main features & Quick Start-->
+      </div>
+      <!--/Grid row-->
+
+    </section>
+    <!--Section: Main features & Quick Start-->
 
     </div>
   </main>
