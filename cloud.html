@@ -133,7 +133,6 @@
     }
 
     #info-bar {
-      padding-top: .5rem;
       background-color: #00000061;
       min-height: 4rem;
       margin-top: 2rem;
@@ -145,8 +144,12 @@
       font-size: 1.5rem;
     }
 
+    section {
+      min-height: 100vh;
+    }
+
     #section-2 {
-      background: linear-gradient(to bottom, #0a1f26, #103944, #0a1f26);
+      background: linear-gradient(to bottom, #0a1f26, #0f2e36, #0a1f26);
       color: white;
       padding-top: 2rem;
       padding-bottom: 2rem;
@@ -170,17 +173,30 @@
       }
 
       #first-section-box-sx {
-        margin-bottom: 5rem !important;
+        margin-bottom: 2rem !important;
       }
 
       #first-section-box-sx h1 {
         padding-top: 1rem;
+        padding-bottom: 1rem;
       }
 
       #info-bar {
         margin-top: 0 !important;
         padding-top: 1.3rem !important;
         padding-bottom: .5rem !important;
+      }
+
+      h3 {
+        font-size: 1.6rem !important;
+      }
+
+      .h5 {
+        font-size: 1.2rem !important;
+      }
+
+      .card.card-image {
+        max-width: 12rem !important;
       }
 
       #info-bar .fas,
@@ -250,7 +266,7 @@
     <div id="first-section" class="mask rgba-black d-flex justify-content-center align-items-center">
 
       <!-- Info Bar -->
-      <div class="container d-flex mb-2 py-2" id="info-bar">
+      <div class="container d-flex mb-2 pb-2 pt-3" id="info-bar">
         <div class="row text-white text-center small m-auto w-100" style="row-gap: .5rem;">
           <div class="col-lg-3 col-md-6 mb-2 d-flex align-items-center justify-content-center">
             <i class="fas fa-map-marker-alt mr-2"></i>
@@ -287,7 +303,7 @@
           <!--Grid column-->
           <div id="first-section-box-sx" class="col-md-6 white-text text-center text-md-left">
 
-            <h1 class="display-4 font-weight-bold">CORPUS</h1>
+            <h1 class="display-5 font-weight-bold">CORPUS</h1>
 
             <hr class="hr-light">
 
@@ -303,7 +319,7 @@
               <li><strong>Check-up gratuito</strong></li>
             </ul>
 
-            <a href="#main" class="btn btn-info btn-lg mt-5" style="border-radius: 2rem">
+            <a href="#servizi" class="btn btn-info btn-lg mt-3" style="border-radius: 2rem">
               Scopri di più
             </a>
 
@@ -341,7 +357,8 @@
   <!-- Full Page Intro -->
 
   <!--Main layout-->
-  <main id="main" class="w-100">
+  <main id="main" class="w-100 position-relative">
+    <span id="servizi" style="position: absolute; top: -70px; left: 0; opacity: 0; z-index: -1; height: 0;"></span>
 
     <!--Section: Services-->
     <section id="section-2">
