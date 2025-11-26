@@ -84,6 +84,14 @@
       color: white;
     }
 
+    footer.page-footer, footer.page-footer a {
+      color: black;
+    }
+
+    footer.page-footer .footer-copyright {
+        color: rgb(0 0 0 / 60%);
+    }
+
     .service-card {
       position: relative;
       border-radius: 12px;
@@ -206,6 +214,37 @@
         font-size: 1.2rem;
       }
     }
+    
+    /* Dark theme adjustments */
+    body {
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+    }
+
+    .card {
+      background-color: #2d2d2d;
+      color: #e0e0e0;
+    }
+
+    .card-body {
+      background-color: #2d2d2d;
+    }
+
+    .grey-text {
+      color: #b0b0b0 !important;
+    }
+
+    .text-muted {
+      color: #9e9e9e !important;
+    }
+
+    hr {
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-rounded {
+      border-radius: 2rem;
+    }
   </style>
 </head>
 
@@ -296,7 +335,7 @@
       </div>
 
       <!-- Content -->
-      <div class="container mx-auto mb-auto mt-2">
+      <div class="container mx-auto my-auto">
 
         <!--Grid row-->
         <div class="row wow fadeIn card-intro" style="background: rgba(0,23,79,0.31);">
@@ -320,7 +359,7 @@
               <li><strong>Check-up gratuito</strong></li>
             </ul>
 
-            <a href="#servizi" class="btn btn-info btn-lg mt-3" style="border-radius: 2rem">
+            <a href="#servizi" class="btn btn-info btn-rounded btn-lg mt-3">
               Scopri di più
             </a>
 
@@ -598,10 +637,10 @@
             <p class="grey-text">Nel cuore dell'Ardeatino</p>
 
             <div class="mt-5">
-              <a href="https://wa.me/3336894138" target="_blank" class="btn btn-success btn-lg mx-2">
+              <a href="https://wa.me/3336894138" target="_blank" class="btn btn-success btn-rounded btn-lg mx-2">
                 <i class="fab fa-whatsapp"></i> WhatsApp
               </a>
-              <a href="tel:3336894138" class="btn btn-info btn-lg mx-2">
+              <a href="tel:3336894138" class="btn btn-info btn-rounded btn-lg mx-2">
                 <i class="fas fa-phone"></i> Chiama ora
               </a>
             </div>
