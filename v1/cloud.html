@@ -72,12 +72,12 @@
 
     .navbar {
       background-color: transparent;
-      background: linear-gradient(to right, rgb(255 255 255 / 90%), rgb(0 0 0 / 0%));
+      background: linear-gradient(to right, rgb(123 149 168 / 98%), rgb(0 0 0 / 0%));
     }
 
     .page-footer,
     .top-nav-collapse {
-      background-color: white;
+      background-color: #e5f7fe;
     }
 
     .navbar.navbar-light:not(.top-nav-collapse) .navbar-nav .nav-item .nav-link {
@@ -144,15 +144,16 @@
       font-size: 1.5rem;
     }
 
-    section {
-      min-height: 100vh;
-    }
-
     #section-2 {
       background: linear-gradient(to bottom, #0a1f26, #0f2e36, #0a1f26);
       color: white;
       padding-top: 2rem;
       padding-bottom: 2rem;
+      min-height: 100vh;
+    }
+
+    .navbar-nav .nav-link {
+      font-weight: bolder;
     }
 
     @media only screen and (max-width: 768px) {
@@ -208,7 +209,7 @@
   </style>
 </head>
 
-<body>
+<body data-mdb-theme="dark">
 
   <!-- Navbar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar">
@@ -466,7 +467,7 @@
 
         <!--Grid column-->
         <div class="col-md-6 mb-4">
-          <div class="card">
+          <div class="card" data-mdb-theme="dark">
             <div class="card-body">
               <h4 class="card-title">
                 <i class="fas fa-walking indigo-text mr-2"></i>

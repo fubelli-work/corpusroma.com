@@ -1,0 +1,243 @@
+/* Required height of parents of the Half Page Carousel for proper displaying carousel itself */
+html,
+body,
+.view {
+  height: 100%; }
+
+@media (max-width: 740px) {
+  .full-page-intro {
+    height: 1000px; } }
+
+/* Half Page Carousel itself*/
+.carousel {
+  height: 50%; }
+  .carousel .carousel-inner {
+    height: 100%; }
+    .carousel .carousel-inner .carousel-item,
+    .carousel .carousel-inner .active {
+      height: 100%; }
+
+/* Adjustment for mobile devices*/
+@media (max-width: 776px) {
+  .carousel {
+    height: 100%; } }
+
+/* Navbar animation */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.3); }
+.nav-link {
+  font-weight: bolder;
+}
+.navbar-brand {
+  font-weight: bold;
+}
+
+.top-nav-collapse {
+  background-color: #1C2331; }
+
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1C2331; } }
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 650px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #1C2331!important;
+  }
+}
+
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #1C2331; }
+
+#how-to .stepper-vertical li .step-content p {
+  font-size: 1rem;
+}
+
+#how-it-works ul.stepper {
+  margin: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+
+@media (min-width: 768px) {
+  .col-center .col {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media (max-width: 767px) {
+  .col-center .col {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  h2.h1 {
+    font-size: 2rem !important;
+  }
+  .h1 {
+    font-size: 2.4rem !important;
+  }
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.light-blue-bg {
+  /*background-color: #f0fffb;
+  background-color: #00547d;*/
+  background-color: #4991b2;
+}
+.icon-list li i {
+  font-size: 1.5rem;
+  margin: 8px;
+}
+.icon-list li {
+  line-height: 2;
+}
+h1 {
+  font-size: 3.5rem !important;
+}
+
+.view {
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+a:not([href]) {
+  pointer-events: none;
+}
+a[href].syis-text:hover {
+  color: #96ffb5;
+}
+
+.card.card-image {
+  background: rgba(255, 255, 255, 0.09);
+}
+
+section.section-secondary {
+  background-color: #f5f5f5;
+}
+
+#main {
+  min-height: calc(100vh - 400px);
+}
+
+.rgba-black {
+  background-color: rgba(53, 53, 53, 0.55);
+}
+
+.syis-text {
+  color: #00ffe8;
+}
+
+.syis-dark-text {
+  color: #0064c0;
+}
+
+.azure-text {
+  color: #b3dcff;
+}
+
+.badge-syis {
+  background-color: #00ffe8;
+}
+
+.bg-center {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.toast {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100%;
+}
+.toast.show {
+  z-index: 100 !important;
+}
+.toast-content {
+  margin: auto;
+  height: auto;
+  width: auto;
+}
+.toast-body ul {
+  padding-left: 1rem;
+}
+.toast-footer .close {
+  padding: 0.6rem 1rem !important;
+}
+
+#error-toast .toast-content {
+  background-color: #fff0f2 !important;
+}
+#success-toast .toast-content {
+  background-color: #e9fff1 !important;
+}
+
+.toast {
+  background-color: transparent;
+}
+
+#loader {
+  background-color: rgba(229, 229, 229, 0.65);
+}
+.toast .toast {
+  opacity: 1 !important;
+}
+
+.toast .toast-content {
+  max-width: 65vw;
+}
+
+.toast-footer button {
+  color: #4a4a4a;
+  opacity: 1;
+}
+
+#loader.show {
+  z-index: 99 !important;
+}
+
+.toast .toast-body {
+  font-size: larger;
+}
+
+.toast .toast-footer button {
+  margin: .75rem;
+}
