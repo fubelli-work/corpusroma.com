@@ -1,6 +1,6 @@
 # Corpus Roma
 
-corpusfisioterapia.com
+corpusroma.com
 
 - URL: [https://corpusroma.com](https://corpusroma.com)
 - Deploy: `git push origin main`
