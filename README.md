@@ -29,6 +29,7 @@ Qui il corpo parla, e noi impariamo ad ascoltarlo insieme. 💫
 - Orari di Apertura: Lun - Ven 08:00-20:00
 - Telefono: (+39) 333 6894 138
 - WhatsApp: https://wa.me/3336894138
+- Google Place ID: ChIJ9-FescSLJRMRwXSIvrTPWZ0
 
 ## Link
 
