@@ -126,6 +126,16 @@
             color: white;
         }
 
+        .nav-item-toggle {
+            background: transparent !important;
+            display: flex;
+            align-items: end;
+            padding-right: 0 !important;
+        }
+        .nav-item-toggle > button {
+            margin-left: auto;
+        }
+
         .service-card-content {
             padding: 2rem;
             text-align: center;
@@ -346,6 +356,10 @@
             z-index: -1;
             height: 0;
         }
+
+        .text-muted {
+            color: #cdcdcd !important
+        }
     </style>
 </head>
 
@@ -391,9 +405,9 @@
                             Contatti
                         </a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <button id="dark-mode-toggle" class="btn btn-sm btn-outline-light" title="Toggle Dark Mode" 
-                                style="border-radius: 50%; width: 40px; height: 40px; padding: 0; display: flex; align-items: center; justify-content: center;">
+                    <li class="nav-item ml-3 nav-item-toggle">
+                        <button id="dark-mode-toggle" class="btn btn-sm btn-outline-light" title="Toggle Dark Mode"
+                            style="border-radius: 50%; width: 30px; height: 30px; padding: 0; display: flex; align-items: center; justify-content: center;">
                             <i class="fas fa-moon"></i>
                         </button>
                     </li>
@@ -482,7 +496,13 @@
                         <ul class="mb-4 d-md-block" style="list-style: '✓  '; text-align: left;">
                             <li><strong>Approccio integrato e personalizzato</strong></li>
                             <li><strong>Competenza scientifica e attenzione alla persona</strong></li>
-                            <li><strong>Check-up gratuito</strong></li>
+                            <li>
+                                <div class="d-flex flex-column">
+                                    <strong>Prima visita gratuita</strong>
+                                    <span class="span text-muted" style="font-size: smaller;">(Incontro di valutazione
+                                        di 30 minuti)</span>
+                                </div>
+                            </li>
                         </ul>
 
                         <a href="#servizi" class="btn btn-info btn-rounded btn-lg mt-3">
@@ -864,21 +884,21 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom JavaScript -->
     <script type="text/javascript" src="js/script.js"></script>
-    
+
     <!-- Dark Mode Toggle Script -->
     <script>
         const darkModeToggle = document.getElementById('dark-mode-toggle');
         const body = document.body;
-        
+
         // Check for saved preference
         if (localStorage.getItem('darkMode') === 'enabled') {
             body.classList.add('dark');
             darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
         }
-        
+
         darkModeToggle.addEventListener('click', () => {
             body.classList.toggle('dark');
-            
+
             if (body.classList.contains('dark')) {
                 localStorage.setItem('darkMode', 'enabled');
                 darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
