@@ -144,6 +144,10 @@
             padding-bottom: 2rem;
             flex-direction: column;
             /*background-color: #00172df2;*/
+            background: linear-gradient(to bottom, #144574de, #214445f7);
+        }
+
+        body.dark #first-section {
             background: linear-gradient(to bottom, #00172df2, #000000d9);
         }
 
@@ -161,11 +165,24 @@
         }
 
         #section-2 {
-            background: linear-gradient(to bottom, #0a1f26, #0f2e36, #0a1f26);
+            background: linear-gradient(to bottom, #3c99a7, #4d818e, #4a9db8);
             color: white;
             padding-top: 2rem;
             padding-bottom: 2rem;
             min-height: calc(100vh - 60px);
+        }
+
+        body.dark #section-2 {
+            background: linear-gradient(to bottom, #0a1f26, #0f2e36, #0a1f26);
+        }
+
+        #section-5 {
+            background: linear-gradient(to bottom, #3c99a7, #4d818e, #4a9db8);
+            color: white;
+        }
+
+        body.dark #section-5 {
+            background: linear-gradient(to bottom, #0a1f26, #0f2e36, #0a1f26);
         }
 
         .navbar-nav .nav-link {
@@ -246,7 +263,7 @@
             .navbar {
                 background: linear-gradient(to right, rgb(113 131 144), rgb(130 144 141));
             }
-            
+
             .navbar .nav-item .nav-link {
                 font-size: 18px;
                 color: black;
@@ -286,8 +303,12 @@
         /* Dark theme adjustments */
         body {
             /*background-color: #1a1a1a;*/
-            background-color: #0b1624;
+            background-color: #08375c;
             color: #e0e0e0;
+        }
+
+        body.dark {
+            background-color: #0b1624;
         }
 
         .card {
@@ -738,8 +759,7 @@
         <!--Section: Main features & Quick Start-->
 
         <!--Section: Contact & Map-->
-        <section id="section-5" class="pt-5 position-relative"
-            style="background: linear-gradient(to bottom, #0a1f26, #0f2e36, #0a1f26); color: white;">
+        <section id="section-5" class="pt-5 position-relative">
             <div id="contatti" class="nav-href"></div>
 
             <div class="container-fluid px-0">
