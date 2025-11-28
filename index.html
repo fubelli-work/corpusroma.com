@@ -216,6 +216,11 @@
             }
 
             .service-card {
+                max-width: 90vw;
+                margin: auto;
+            }
+
+            .service-card {
                 height: 200px;
             }
 
@@ -278,7 +283,7 @@
 
         @media only screen and (max-width: 991px) {
             .navbar {
-                background: linear-gradient(to right, rgb(113 131 144), rgb(130 144 141));
+                background: linear-gradient(to right, rgb(96 138 169), rgb(119 146 140));
             }
 
             body.dark .navbar {
@@ -348,6 +353,10 @@
         }
 
         .text-muted {
+            color: #9a9a9a !important;
+        }
+
+        .text-muted.light-bg {
             color: #6c6c6c !important
         }
 
@@ -805,7 +814,7 @@
                 <div class="text-center mb-4">
                     <h3 class="h3 mb-4">Prenota un Check-up gratuito</h3>
                     <p class="h6"><i class="fas fa-map-marker-alt mr-2"></i>Via Eusebio Chini 15, 00147 Roma</p>
-                    <p class="text-muted">Nel cuore dell'Ardeatino</p>
+                    <p class="text-muted light-bg">Nel cuore dell'Ardeatino</p>
 
                     <div class="mt-4">
                         <a href="https://wa.me/3336894138" target="_blank"
@@ -917,6 +926,11 @@
                 localStorage.setItem('darkMode', 'disabled');
                 darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
             }
+        });
+
+        // Close navbar menu when clicking on nav links
+        $('.navbar-nav .nav-link').on('click', function () {
+            $('.navbar-collapse').collapse('hide');
         });
     </script>
 </body>
